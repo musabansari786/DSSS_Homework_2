@@ -22,7 +22,9 @@ def calculate_result(num1, num2, operator):
         result = num1 - num2
     else:
         result = num1 * num2
-    return result
+
+    problem = f"{num1} {operator} {num2}"
+    return problem, result
 
 def math_quiz():
     score = 0
@@ -54,5 +56,4 @@ def math_quiz():
     print(f"\nGame over! Your score is: {score}/{total_questions}")
 
 if __name__ == "__main__":
-    math_quiz()
-
+    math_quiz();
