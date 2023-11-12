@@ -1,2 +1,2 @@
 # DSSS_Homework_2
- DSSS Homework 2
+A Readme file for DSSS Homework 2
