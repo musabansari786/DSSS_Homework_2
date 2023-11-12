@@ -18,19 +18,19 @@ class TestMathQuiz(unittest.TestCase):
             rand_operator = generate_random_operator()
             self.assertIn(rand_operator, operators)
 
-def test_calculate_result(self):
-    test_cases = [
-        (5, 2, '+', '5 + 2', 7),
-        (10, 5, '*', '10 * 5', 50),
-        (8, 3, '-', '8 - 3', 5),
-        (3, 0, '+', '3 + 0', 3),  # Test with zero
-        (1, 1, '*', '1 * 1', 1),  # Test with one
-    ]
+    def test_calculate_result(self):
+        test_cases = [
+            (5, 2, '+', '5 + 2', 7),
+            (10, 5, '*', '10 * 5', 50),
+            (8, 3, '-', '8 - 3', 5),
+            (3, 0, '+', '3 + 0', 3),  # Test with zero
+            (1, 1, '*', '1 * 1', 1),  # Test with one
+        ]
 
-    for num1, num2, operator, expected_problem, expected_answer in test_cases:
-        problem, result = calculate_result(num1, num2, operator)
-        expected_result = (expected_problem, expected_answer)
-        self.assertEqual((problem, result), expected_result)
+        for num1, num2, operator, expected_problem, expected_answer in test_cases:
+            problem, result = calculate_result(num1, num2, operator)
+            expected_result = (expected_problem, expected_answer)
+            self.assertEqual((problem, result), expected_result)
 
 if __name__ == "__main__":
     unittest.main()
