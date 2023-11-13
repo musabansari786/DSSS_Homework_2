@@ -11,5 +11,5 @@ setup(
     },
     install_requires=[],
     tests_require=[],
-    test_suite='math_quiz.tests',
+    test_suite='math_quiz.test_math_quiz',
 )
